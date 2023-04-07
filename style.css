@@ -314,6 +314,10 @@ main img{
     padding: 0;
     }
 
+    body{
+        background-color: black!important;
+    }
+
     main{
         width: 100%;
     }
@@ -329,6 +333,10 @@ main img{
     nav{
         display: flex;
         justify-content: space-around;
+    }
+
+    nav svg{
+        color: white;
     }
 
     .button-container{
@@ -378,15 +386,27 @@ main img{
 
 }
 
-@media screen and (min-width: 375px) and (max-width: 425px){
+@media screen and (min-width: 375px) and (max-width: 475px){
     
+    body{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    }
+    main{
+        margin-left:2em; 
+        justify-content: center;
+        max-width: 375px;
+    }
+
     .img-random{
         margin: 0;
-        columns: 2 50px;
+        columns: 2 10px;
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 610px){
+@media screen and (min-width: 475px) and (max-width: 610px){
     .img-random{
         margin: 0;
         columns: 3 50px;
