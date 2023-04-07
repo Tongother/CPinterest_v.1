@@ -442,14 +442,27 @@ main img{
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1700px){
+@media screen and (min-width: 1300px) and (max-width: 1700px){    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        }
+    
     nav{
         justify-content: space-around;
     }
 
-    .inputSearch{
-        width: 53em;
+    main{
+        max-width: 1300px;
     }
+
+    .inputSearch{
+        width: 48em;
+    }
+
+
 
     .img-random{
         margin-top: 6em;
