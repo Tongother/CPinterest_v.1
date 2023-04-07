@@ -305,6 +305,14 @@ main img{
     margin-bottom: 10px;
   }
 
+  footer{
+    position: fixed;
+    width: 100%;
+    padding-bottom: 1em;
+    top: 95%;
+    background-color: black;
+  }
+
   .White{
     color:white;
   }
@@ -320,6 +328,7 @@ main img{
 
     main{
         width: 100%;
+        margin-left: 6px;
     }
 
     .img-random{
@@ -395,7 +404,7 @@ main img{
     flex-wrap: wrap;
     }
     main{
-        margin-left:2em; 
+        margin-left:2em;
         justify-content: center;
         max-width: 375px;
     }
@@ -403,6 +412,7 @@ main img{
     .img-random{
         margin: 0;
         columns: 2 10px;
+        height: 310em;
     }
 }
 
@@ -410,6 +420,7 @@ main img{
     .img-random{
         margin: 0;
         columns: 3 50px;
+        height: 215em;
     }
 }
 
@@ -417,6 +428,7 @@ main img{
     .img-random{
         margin: 0;
         columns: 4 50px;
+        height: 162em;
     }
 }
 
@@ -424,6 +436,7 @@ main img{
     .img-random{
         margin: 0;
         columns: 5 50px;
+        height: 130em;
     }
 }
 
@@ -461,8 +474,6 @@ main img{
     .inputSearch{
         width: 48em;
     }
-
-
 
     .img-random{
         margin-top: 6em;
