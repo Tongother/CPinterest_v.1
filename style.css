@@ -481,7 +481,26 @@ main img{
     }
 }
 
-@media screen and (min-width: 1700px) and (max-width: 2560px){
+@media screen and (min-width: 1700px) and (max-width: 2200px){
+    nav{
+        justify-content: space-around;
+    }
+
+    main{
+        
+    }
+
+    .inputSearch{
+        width: 53em;
+    }
+
+    .img-random{
+        margin-top: 6em;
+        columns: 5 50px;
+    }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2760px){
     nav{
         justify-content: space-around;
     }
@@ -493,5 +512,6 @@ main img{
     .img-random{
         margin-top: 6em;
         columns: 6 50px;
+        width: 2100px;
     }
 }
