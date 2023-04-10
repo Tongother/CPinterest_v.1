@@ -39,7 +39,6 @@ header.active{
     transition: all 1;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.5s;
     margin: 0 10px;
 }
 
@@ -51,11 +50,12 @@ header.active{
 
 #dropbtn_Create{
     margin-left: 10px;
+    transition: all 0.5s ease;
 }
 
 #dropbtn_Create.buttonColor{
     background-color: black;
-    color:white;
+    color: white!important;;
     padding: 15px;
 }
   

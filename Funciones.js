@@ -2,12 +2,13 @@ const buttons = document.querySelectorAll('.navegacion ul li');
 const dropbtn_Create = document.querySelector("#dropbtn_Create");
 
 buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
+button.addEventListener('click', function() {
     buttons.forEach(function(btn) {
       btn.classList.remove('buttonColor');
       dropbtn_Create.classList.remove('buttonColor');
     });
     button.classList.toggle('buttonColor', onclick);
+  
   });
 });
 
