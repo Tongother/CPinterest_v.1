@@ -19,21 +19,49 @@ header.active{
     color: white;
 }
 
+.iconosHeader{
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px 0px 0px;
+}
+
 .navegacion ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 0px;
     margin: 0px;
 }
 
 .navegacion ul li{
-    padding: 18px;
     display: inline;
     list-style: none;
     transition: all 1;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.5s;
+    margin: 0 10px;
 }
+
+.buttonColor{
+    background-color: black;
+    color: white;
+    padding: 15px;
+  }
+
+#dropbtn_Create{
+    margin-left: 10px;
+}
+
+#dropbtn_Create.buttonColor{
+    background-color: black;
+    color:white;
+    padding: 15px;
+}
+  
+  .button-container:hover .button:not(.active) {
+    filter: brightness(50%);
+  }
 
 .dropbtn {
     color: black;
@@ -76,12 +104,6 @@ header.active{
     display: block;
 }
 
-.iconosHeader{
-    width: 35px;
-    height: 35px;
-    margin: 0px 10px 0px 26px;
-}
-
 .barra_busqueda{
     display: flex;
     align-items: center;
@@ -94,7 +116,7 @@ header.active{
     background-color: #E4E4E4;
 }
 
-.inputSearch{
+.finder{
     border:none;
     width: 57em;
     padding: 15px 5px;
@@ -103,7 +125,7 @@ header.active{
     font-family: 'Montserrat', sans-serif;
 }
 
-.inputSearch:focus{
+.finder:focus{
     outline: 0;
 }
 
@@ -185,12 +207,12 @@ main img{
     width: 252px;
 }
 
-.image-container {
+.card-image {
     position: relative;
     display: inline-block;
   }
-  
-  .image-container::before {
+
+  .card-image::before {
     content: "";
     position: absolute;
     top: 0;
@@ -208,6 +230,10 @@ main img{
     top: 10px;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+  }
+
+  .button-save:hover{
+    filter: brightness(90%);
   }
 
   .button-save button{
@@ -232,6 +258,10 @@ main img{
     transition: opacity 0.2s ease-in-out;
   }
 
+  .button-container button:nth-child(1):hover{
+    filter: brightness(90%);
+  }
+
   .upload{
     width: 35px; 
     height: 35px; 
@@ -241,20 +271,31 @@ main img{
     margin-left: 40px;
 }
 
+.upload:hover{
+    filter: brightness(90%);
+}
+
 .dots{
     margin: 0px 10px;
     padding: 0 10px;
+}
+
+.dots:hover{
+    filter: brightness(90%);
 }
 
 .upload svg{
     margin-bottom: 5px;
 }
   
-  .image-container:hover .button-container {
+.card-image:hover{
+    filter: brightness(85%);
+}
+  .card-image:hover .button-container {
     opacity: 1;
   }
 
-  .image-container:hover .button-save {
+  .card-image:hover .button-save {
     opacity: 1;
   }
   
@@ -317,7 +358,7 @@ main img{
     color:white;
   }
 
-@media screen and (min-width: 320px) and (max-width: 1100px){
+@media screen and (min-width: 260px) and (max-width: 1100px){
     header{ 
     padding: 0;
     }
@@ -450,7 +491,7 @@ main img{
         columns: 4 50px;
     }
 
-    .inputSearch{
+    .finder{
         width: 18em;
     }
 }
@@ -471,7 +512,7 @@ main img{
         max-width: 1300px;
     }
 
-    .inputSearch{
+    .finder{
         width: 48em;
     }
 
@@ -490,7 +531,7 @@ main img{
         
     }
 
-    .inputSearch{
+    .finder{
         width: 53em;
     }
 
@@ -505,7 +546,7 @@ main img{
         justify-content: space-around;
     }
 
-    .inputSearch{
+    .finder{
         width: 53em;
     }
 
